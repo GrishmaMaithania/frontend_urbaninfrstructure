@@ -1,0 +1,147 @@
+.home-container {
+    background-image: url('../../../Media/image\ \(1\).png'); /* Adjust the path as needed */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    min-height: 100vh; /* Ensure it covers the full viewport height */
+    display: flex;
+    flex-direction: column;
+}
+
+.intro-section {
+    background: rgba(245, 245, 245, 0.7);
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 20px; 
+    max-width: 80%; 
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.intro-section h1 {
+    color: #1a237e; /* Matches the gradient */
+}
+
+.intro-section p {
+    color: #333; /* Dark text for readability */
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* News Section Styles */
+.news-section {
+    background: rgba(245, 245, 245, 0.8); /* Semi-transparent background for readability */
+    border-radius: 8px;
+    padding: 20px; /* Added padding for better spacing */
+    max-width: 55%; 
+    margin: 20px auto; /* Center the content */
+}
+
+/* Slider Styles */
+#imageSlider {
+    white-space: nowrap;
+    display: flex;
+}
+
+#imageSlider img {
+    height: 100%;
+    flex-shrink: 0;
+    width: 300px;
+    margin-right: 8px;
+}
+
+.slide_Img {
+    width: 46%;
+    height: 100%;
+}
+
+.imgs {
+    overflow-x: hidden;
+    width: 59%;
+    position: relative;
+    left: 19%;
+    height: 400px;
+}
+
+.imgs::-webkit-scrollbar {
+    width: 4px;
+}
+
+.imgs::-webkit-scrollbar-thumb {
+    background-color: #078edd;
+    border-radius: 6px;
+}
+
+.imgs::-webkit-scrollbar-thumb:hover {
+    background-color: #078edd;
+}
+
+.imgs::-webkit-scrollbar-track {
+    background-color: #ffffff;
+}
+
+.imgs::-webkit-scrollbar-corner {
+    background-color: #ffffff;
+}
+
+/* Navigation Buttons */
+.BUttons {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.back {
+    background-color: #fff;
+    border: 1px solid;
+    color: gray;
+    border-radius: 50%;
+    width: 30px;
+    font-weight: bolder;
+}
+
+.next {
+    background-color: #fff;
+    border: 1px solid;
+    color: gray;
+    border-radius: 50%;
+    width: 30px;
+    margin-left: 12rem;
+    font-weight: bolder;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .imgs {
+        width: 90%;
+        left: 3%;
+        overflow-x: scroll;
+    }
+
+    .slide_Img {
+        width: 45%;
+    }
+
+    #imageSlider img {
+        width: 200px;
+    }
+
+    .back, .next {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .slide_Img {
+        width: 80%;
+    }
+
+    .logins {
+        display: none;
+    }
+}
