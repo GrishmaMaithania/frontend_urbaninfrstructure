@@ -1,5 +1,5 @@
 .data{
-    background-image: url('../../Media/dataa.png'); 
+    background-image: url('../../Media/image\ \(1\).png'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -12,7 +12,4 @@
     flex-direction: column;
   }
 
-  li{
-   
-    
-  }
+ 

@@ -116,31 +116,36 @@ function Data() {
 
   return (
     <div className="data">
-      <div className="p-8 max-w-5xl mx-auto bg-transparent rounded-lg">
-        <h1 className="text-center mb-5 text-3xl font-semibold text-yellow-400">
-          Comprehensive Insights from Local Railway Commuter Survey and Interviews
+      <div className="p-8 max-w-5xl mx-auto  ">
+        <h1 className="text-center mb-5 text-4xl p-3 font-semibold text-blue-800 bg-white bg-opacity-70 rounded-lg shadow-lg">
+          Comprehensive Insights from Local Railway Commuters Survey and Interviews
         </h1>
-        <p className="text-center mb-4 text-lg text-white">
+        <p className="text-center mb-4 text-xl p-3 text-black bg-white bg-opacity-70 rounded-lg shadow-lg">
         
 
 
 The data presented on this page is the culmination of a comprehensive research effort involving both extensive surveys and in-depth interviews with daily commuters of the local railway system. The research was meticulously conducted to gather detailed insights into the experiences, challenges, and expectations of the citizens who depend on these services for their daily commute.
 
 The survey component involved reaching out to a diverse cross-section of commuters, ensuring that a wide range of perspectives were captured. This included regular passengers, occasional travelers, and those with specific needs, such as individuals with disabilities. The questions were carefully designed to cover all aspects of the commuting experience, from the convenience and safety of the train services to the accessibility and cleanliness of the stations.
-        </p>
-        <p className="text-center mb-8 text-sm text-white">
-          <em>[Click on any point below to view the corresponding data chart.]</em>
+       <br></br>  <br></br>
+       
+          <em className="text-sm text-red-800">[Click on any point below to view the corresponding data chart.]</em>
         </p>
         <div>
 
           {questions.map((question) => (
             <div
             key={question.id}
-          className="mb-5 p-6 bg-white bg-opacity-70 rounded-lg shadow-lg hover:bg-opacity-90 hover:shadow-xl transition ease-in-out duration-300"
+            className="mb-5 p-6 bg-white bg-opacity-70 rounded-lg shadow-lg hover:bg-blue-200 hover:bg-opacity-90 hover:shadow-xl transition ease-in-out duration-300"
+
 
               onClick={() => toggleQuestion(question.id)}
             >
-              <h3 className="cursor-pointer text-lg font-medium">{question.text}</h3>
+           <h3 className="cursor-pointer text-lg font-medium flex items-center">
+  {question.text}
+  <i className="bi bi-chevron-down ml-2"></i>
+</h3>
+
               {selectedQuestions.includes(question.id) && (
                 <div className="mt-4">
                   <iframe

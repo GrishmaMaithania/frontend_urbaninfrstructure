@@ -63,7 +63,7 @@ nav i {
   color: #ff69b4; 
   padding: 10px;
   border-radius: 5px;
-  margin-right: 10px;
+  margin-right: 30px;
   font-size: 1.2rem;
   cursor: pointer;
   margin-top: 0px;
@@ -100,7 +100,7 @@ nav i {
 }
 
 #home {
-  margin-left: 600px;
+  margin-left: 320px;
 }
 
 /* Responsive adjustments */
@@ -120,6 +120,6 @@ nav i {
   }
 
   #home {
-    margin-left: 0; /* Center align for smaller screens */
+    margin-left: 0; 
   }
 }
